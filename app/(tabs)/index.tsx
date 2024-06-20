@@ -4,7 +4,7 @@ import { LittleLeamonHeader } from "@/components/LittleLeamonHeader";
 export default function WelcomeApp() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <Text>Welcome to Little Lemon App!</Text>
+      <LittleLeamonHeader />
     </View>
   );
 }
