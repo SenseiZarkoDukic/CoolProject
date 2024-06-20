@@ -1,10 +1,10 @@
 import { View, Text } from "react-native";
-import { LittleLeamonHeader } from "@/components/LittleLeamonHeader";
+import { LittleLemonHeader } from "@/components/LittleLeamonHeader";
 
 export default function WelcomeApp() {
   return (
     <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
-      <LittleLeamonHeader />
+      <LittleLemonHeader />
     </View>
   );
 }
