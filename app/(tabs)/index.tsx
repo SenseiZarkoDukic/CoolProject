@@ -3,7 +3,7 @@ import { LittleLemonHeader } from "@/components/LittleLemonHeader";
 
 export default function WelcomeApp() {
   return (
-    <View style={{ flex: 1, justifyContent: "center", alignItems: "center" }}>
+    <View style={{ flex: 1, justifyContent: "flex-start", padding: 45}}>
       <LittleLemonHeader />
     </View>
   );
