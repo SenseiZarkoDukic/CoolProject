@@ -1,4 +1,5 @@
 import { View, Text } from "react-native";
+import { LittleLeamonHeader } from "@/components/LittleLeamonHeader";
 
 export default function WelcomeApp() {
   return (
