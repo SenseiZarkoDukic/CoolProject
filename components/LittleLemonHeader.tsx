@@ -1,16 +1,9 @@
-import * as React from "react";
+// import * as React from "react";
 import { View, Text } from "react-native";
 
 export function LittleLemonHeader() {
   return (
-    <View
-      style={{
-        flex: 0.15,
-        backgroundColor: "#F4CE14",
-        alignItems: "center",
-        justifyContent: "center",
-      }}
-    >
+    <View style={{ flex: 0.15, backgroundColor: "#F4CE14" }}>
       <Text
         style={{
           padding: 40,

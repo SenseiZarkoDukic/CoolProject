@@ -4,13 +4,8 @@ export function LittleLemonFooter() {
   return (
     <View
       style={{
-        flex: 0.05,
-
         backgroundColor: "#F4CE14",
         marginBottom: 10,
-        marginTop: "auto",
-        alignItems: "center",
-        justifyContent: "center",
       }}
     >
       <Text
