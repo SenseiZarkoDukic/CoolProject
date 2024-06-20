@@ -1,25 +1,27 @@
-import * as React from "react";
 import { View, Text } from "react-native";
 
-export function LittleLemonHeader() {
+export function LittleLemonFooter() {
   return (
     <View
       style={{
-        flex: 0.15,
+        flex: 0.05,
+
         backgroundColor: "#F4CE14",
+        marginBottom: 10,
+        marginTop: "auto",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
       <Text
         style={{
-          padding: 40,
-          fontSize: 30,
+          // padding: 10,
+          fontSize: 18,
           color: "black",
           textAlign: "center",
         }}
       >
-        Little Lemon
+        All rights reserved by Little Lemon, 2022
       </Text>
     </View>
   );
