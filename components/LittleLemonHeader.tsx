@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 
 export function LittleLemonHeader() {
   return (
-    <View style={{ flex: 0.2, backgroundColor: "#F4CE14" }}>
+    <View style={{ flex: 0.175, backgroundColor: "#F4CE14" }}>
       <Text
         style={{
           padding: 40,
