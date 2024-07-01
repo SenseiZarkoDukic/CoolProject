@@ -2,6 +2,7 @@ import { View, Text } from "react-native";
 import { LittleLemonHeader } from "@/components/LittleLemonHeader";
 import { LittleLemonFooter } from "@/components/LittleLemonFooter";
 import { WelcomeScreen } from "@/components/WelcomeScreen";
+import MenuItems from "@/components/MenuItems";
 
 export default function WelcomeApp() {
   return (
@@ -13,7 +14,8 @@ export default function WelcomeApp() {
         }}
       >
         <LittleLemonHeader />
-        <WelcomeScreen />
+        {/* <WelcomeScreen /> */}
+        <MenuItems />
       </View>
 
       <View
