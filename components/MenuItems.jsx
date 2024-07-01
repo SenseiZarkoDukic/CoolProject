@@ -34,7 +34,7 @@ const MenuItems = () => {
             style={{
               color: yellow,
               textAlign: "center",
-              fontSize: 30,
+              fontSize: 36,
               padding: 40,
             }}
           >
