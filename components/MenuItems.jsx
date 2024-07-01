@@ -13,8 +13,9 @@ const MenuItems = () => {
   return (
     <View style={{ flex: 0.75 }}>
       <ScrollView
-        horizontal="false"
-        style={{ padding: 40, backgroundColor: green }}
+        indicatorStyle={"white"}
+        horizontal={false}
+        style={{ padding: 40, backgroundColor: "black" }}
       >
         <Text
           style={{
