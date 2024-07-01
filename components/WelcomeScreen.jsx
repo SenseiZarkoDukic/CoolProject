@@ -2,12 +2,12 @@ import { View, Text } from "react-native";
 
 export function WelcomeScreen() {
   return (
-    <View>
+    <View style={{ flex: 1 }}>
       <Text
         style={{
-          color: "white",
+          color: "#EDEFEE",
           textAlign: "center",
-          fontSize: 24,
+          fontSize: 30,
           padding: 40,
         }}
       >
@@ -15,10 +15,11 @@ export function WelcomeScreen() {
       </Text>
       <Text
         style={{
-          color: "white",
+          color: "#EDEFEE",
           textAlign: "center",
-          fontSize: 20,
-          padding: 40,
+          marginVertical: 8,
+          fontSize: 24,
+          padding: 20,
         }}
       >
         Little Lemon is a charming neighborhood bistro that serves simple food

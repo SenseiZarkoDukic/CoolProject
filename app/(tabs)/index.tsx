@@ -13,9 +13,7 @@ export default function WelcomeApp() {
         }}
       >
         <LittleLemonHeader />
-        <View style={{ flex: 0.5 }}>
-          <WelcomeScreen />
-        </View>
+        <WelcomeScreen />
       </View>
 
       <View
