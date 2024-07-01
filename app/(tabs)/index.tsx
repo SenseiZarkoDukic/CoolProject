@@ -1,6 +1,7 @@
 import { View, Text } from "react-native";
 import { LittleLemonHeader } from "@/components/LittleLemonHeader";
 import { LittleLemonFooter } from "@/components/LittleLemonFooter";
+import { WelcomeScreen } from "@/components/WelcomeScreen";
 
 export default function WelcomeApp() {
   return (
@@ -12,7 +13,11 @@ export default function WelcomeApp() {
         }}
       >
         <LittleLemonHeader />
+        <View>
+          <WelcomeScreen />
+        </View>
       </View>
+
       <View
         style={{
           backgroundColor: "#495E57",
