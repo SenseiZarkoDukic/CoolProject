@@ -1,13 +1,13 @@
-import { View, Text } from "react-native";
+import { View, Text, ScrollView } from "react-native";
 
 export function WelcomeScreen() {
   return (
-    <View style={{ flex: 1 }}>
+    <ScrollView indicatorStyle={"white"} style={{ flex: 1 }}>
       <Text
         style={{
           color: "#EDEFEE",
           textAlign: "center",
-          fontSize: 30,
+          fontSize: 50,
           padding: 40,
         }}
       >
@@ -18,7 +18,7 @@ export function WelcomeScreen() {
           color: "#EDEFEE",
           textAlign: "center",
           marginVertical: 8,
-          fontSize: 24,
+          fontSize: 38,
           padding: 20,
         }}
       >
@@ -26,6 +26,6 @@ export function WelcomeScreen() {
         and classic cocktails in a lively but casual environment. We would love
         to hear more about your experience with us!
       </Text>
-    </View>
+    </ScrollView>
   );
 }
