@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ScrollView } from "react-native";
+import { View, Text, ScrollView, StyleSheet } from "react-native";
 
 const green = "#495E57";
 const white = "#EDEFEE";
@@ -47,3 +47,7 @@ const MenuItems = () => {
 };
 
 export default MenuItems;
+
+const menuStyles = StyleSheet.create({
+  container: { flex: 1 },
+});
