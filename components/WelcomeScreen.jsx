@@ -11,7 +11,7 @@ export function WelcomeScreen() {
           padding: 40,
         }}
       >
-        Welcome to the app!
+        Welcome to Little Lemon
       </Text>
       <Text
         style={{
