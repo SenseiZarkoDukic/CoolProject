@@ -25,7 +25,7 @@ const footerStyles = StyleSheet.create({
 const orangeFooterStyles = StyleSheet.create({
   container: {
     backgroundColor: "#EE9972",
-    marginBottom: 10,
+    marginBottom: 20,
   },
   footerTitle: {
     fontSize: 18,
