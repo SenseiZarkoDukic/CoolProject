@@ -7,27 +7,28 @@ import MenuItems from "@/components/MenuItems";
 export default function WelcomeApp() {
   return (
     <>
-      <View
-        style={{
-          flex: 1,
-          backgroundColor: "#495E57",
-        }}
-      >
+      <View style={styles.container}>
         <LittleLemonHeader />
         {/* <WelcomeScreen /> */}
         <MenuItems />
       </View>
 
-      <View
-        style={{
-          backgroundColor: "#495E57",
-        }}
-      >
+      <View style={styles.footerContainer}>
         <LittleLemonFooter />
       </View>
     </>
   );
 }
+
+const styles = {
+  container: {
+    flex: 1,
+    backgroundColor: "#495E57",
+  },
+  footerContainer: {
+    backgroundColor: "#495E57",
+  },
+};
 
 // import { Image, StyleSheet, Platform } from "react-native";
 
