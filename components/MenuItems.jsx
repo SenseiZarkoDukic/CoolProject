@@ -17,9 +17,9 @@ const MenuItems = () => {
         horizontal={false}
         style={menuStyles.innerContainer}
       >
-        <Text style={menuStyles.header}>View Menu</Text>
+        <Text style={menuStyles.headerText}>View Menu</Text>
         {menuItemsToDisplay.map((item, index) => (
-          <Text key={index} style={menuStyles.text}>
+          <Text key={index} style={menuStyles.itemText}>
             {item}
           </Text>
         ))}
@@ -33,14 +33,14 @@ export default MenuItems;
 const menuStyles = StyleSheet.create({
   container: { flex: 1 },
   innerContainer: { padding: 40, backgroundColor: green },
-  header: {
+  headerText: {
     color: white,
     textAlign: "center",
     fontSize: 40,
     padding: 40,
     flexWrap: "wrap",
   },
-  text: {
+  itemText: {
     color: yellow,
     textAlign: "center",
     fontSize: 36,
