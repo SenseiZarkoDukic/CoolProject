@@ -22,12 +22,12 @@ const headerStyles = StyleSheet.create({
   },
 });
 const orangeHeaderStyles = StyleSheet.create({
-  container: { flex: 0.1, backgroundColor: "#EE9972", padding: 10 },
+  container: { backgroundColor: "#EE9972" },
   headerTitle: {
+    padding: 40,
     fontSize: 30,
     textAlign: "center",
     fontWeight: "bold",
     color: "black",
-    marginTop: 10,
   },
 });
