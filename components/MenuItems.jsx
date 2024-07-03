@@ -19,15 +19,7 @@ const MenuItems = () => {
       >
         <Text style={menuStyles.header}>View Menu</Text>
         {menuItemsToDisplay.map((item, index) => (
-          <Text
-            key={index}
-            style={{
-              color: yellow,
-              textAlign: "center",
-              fontSize: 36,
-              padding: 40,
-            }}
-          >
+          <Text key={index} style={menuStyles.text}>
             {item}
           </Text>
         ))}
@@ -47,5 +39,11 @@ const menuStyles = StyleSheet.create({
     fontSize: 40,
     padding: 40,
     flexWrap: "wrap",
+  },
+  text: {
+    color: yellow,
+    textAlign: "center",
+    fontSize: 36,
+    padding: 40,
   },
 });
