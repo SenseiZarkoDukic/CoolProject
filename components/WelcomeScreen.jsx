@@ -2,11 +2,9 @@ import { View, Text, ScrollView, StyleSheet } from "react-native";
 
 export function WelcomeScreen() {
   return (
-    <ScrollView indicatorStyle={"white"} style={welcomeStyles.container}>
-      <Text style={welcomeStyles.whiteHeaderTextSmall}>
-        Welcome to Little Lemon
-      </Text>
-      <Text style={welcomeStyles.whiteTextSmall}>
+    <ScrollView indicatorStyle={"white"} style={welcomeStylesSmall.container}>
+      <Text style={welcomeStylesSmall.headerText}>Welcome to Little Lemon</Text>
+      <Text style={welcomeStylesSmall.text}>
         Little Lemon is a charming neighborhood bistro that serves simple food
         and classic cocktails in a lively but casual environment. We would love
         to hear more about your experience with us!
@@ -17,7 +15,6 @@ export function WelcomeScreen() {
 
 const welcomeStyles = StyleSheet.create({
   container: { flex: 1 },
-
   headerText: {
     color: "#EDEFEE",
     textAlign: "center",
@@ -33,14 +30,14 @@ const welcomeStyles = StyleSheet.create({
   },
 });
 
-const whiteWelcomeStyles = StyleSheet.create({
+const welcomeStylesSmall = StyleSheet.create({
+  container: { flex: 1 },
   headerText: {
     padding: 40,
     fontSize: 30,
     color: "#EDEFEE",
     textAlign: "center",
   },
-
   text: {
     fontSize: 24,
     padding: 20,

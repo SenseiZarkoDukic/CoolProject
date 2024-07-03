@@ -2,8 +2,8 @@ import { View, Text, StyleSheet } from "react-native";
 
 export function LittleLemonFooter() {
   return (
-    <View style={footerStyles.container}>
-      <Text style={footerStyles.footerTitle}>
+    <View style={orangeFooterStyles.container}>
+      <Text style={orangeFooterStyles.footerTitle}>
         All rights reserved by Little Lemon, 2022
       </Text>
     </View>
@@ -23,13 +23,14 @@ const footerStyles = StyleSheet.create({
 });
 
 const orangeFooterStyles = StyleSheet.create({
-  orangeContainer: {
-    backgroundColor: "#F4CE14",
+  container: {
+    backgroundColor: "#EE9972",
     marginBottom: 10,
   },
-  orangeFooterTitle: {
+  footerTitle: {
     fontSize: 18,
     color: "black",
     textAlign: "center",
+    fontStyle: "italic",
   },
 });
