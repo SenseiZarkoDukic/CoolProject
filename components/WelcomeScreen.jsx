@@ -18,26 +18,30 @@ export function WelcomeScreen() {
 const welcomeStyles = StyleSheet.create({
   container: { flex: 1 },
 
-  whiteHeaderTextBig: {
+  headerText: {
     color: "#EDEFEE",
     textAlign: "center",
     fontSize: 50,
     padding: 40,
   },
-  whiteHeaderTextSmall: {
-    padding: 40,
-    fontSize: 30,
-    color: "#EDEFEE",
-    textAlign: "center",
-  },
-  whiteTextBig: {
+  text: {
     color: "#EDEFEE",
     textAlign: "center",
     marginVertical: 8,
     fontSize: 38,
     padding: 20,
   },
-  whiteTextSmall: {
+});
+
+const whiteWelcomeStyles = StyleSheet.create({
+  headerText: {
+    padding: 40,
+    fontSize: 30,
+    color: "#EDEFEE",
+    textAlign: "center",
+  },
+
+  text: {
     fontSize: 24,
     padding: 20,
     marginVertical: 8,

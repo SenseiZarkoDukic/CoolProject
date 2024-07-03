@@ -21,3 +21,15 @@ const footerStyles = StyleSheet.create({
     textAlign: "center",
   },
 });
+
+const orangeFooterStyles = StyleSheet.create({
+  orangeContainer: {
+    backgroundColor: "#F4CE14",
+    marginBottom: 10,
+  },
+  orangeFooterTitle: {
+    fontSize: 18,
+    color: "black",
+    textAlign: "center",
+  },
+});
