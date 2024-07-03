@@ -17,17 +17,7 @@ const MenuItems = () => {
         horizontal={false}
         style={menuStyles.innerContainer}
       >
-        <Text
-          style={{
-            color: white,
-            textAlign: "center",
-            fontSize: 40,
-            padding: 40,
-            flexWrap: "wrap",
-          }}
-        >
-          View Menu
-        </Text>
+        <Text style={menuStyles.header}>View Menu</Text>
         {menuItemsToDisplay.map((item, index) => (
           <Text
             key={index}
@@ -51,4 +41,11 @@ export default MenuItems;
 const menuStyles = StyleSheet.create({
   container: { flex: 1 },
   innerContainer: { padding: 40, backgroundColor: green },
+  header: {
+    color: white,
+    textAlign: "center",
+    fontSize: 40,
+    padding: 40,
+    flexWrap: "wrap",
+  },
 });
