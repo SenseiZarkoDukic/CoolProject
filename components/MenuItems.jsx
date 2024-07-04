@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, ScrollView, StyleSheet } from "react-native";
+import { View, Text, ScrollView, StyleSheet, FlatList } from "react-native";
 
 const green = "#495E57";
 const white = "#EDEFEE";
@@ -33,18 +33,8 @@ const menuItemsToDisplay = [
 const MenuItems = () => {
   return (
     <View style={menuStyles.container}>
-      <ScrollView
-        indicatorStyle={"white"}
-        horizontal={false}
-        style={menuStyles.innerContainer}
-      >
-        <Text style={menuStyles.headerText}>View Menu</Text>
-        {menuItemsToDisplay.map((item, index) => (
-          <Text key={index} style={menuStyles.itemText}>
-            {item}
-          </Text>
-        ))}
-      </ScrollView>
+      <Text style={menuStyles.headerText}>View Menu</Text>
+      <FlatList data={menuItemsToDisplay} renderItem={renderItem} />
     </View>
   );
 };
