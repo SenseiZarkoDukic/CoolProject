@@ -30,7 +30,15 @@ const menuItemsToDisplay = [
   { name: "Panna Cotta", id: "22W" },
 ];
 
+const Item = ({ name }) => (
+  <View style={menuStyles.innerContainer}>
+    <Text style={menuStyles.itemText}>{name}</Text>
+  </View>
+);
+
 const MenuItems = () => {
+  const renderItem = ({ item }) => <Item name={item.name} id={item.id} />;
+
   return (
     <View style={menuStyles.container}>
       <Text style={menuStyles.headerText}>View Menu</Text>
