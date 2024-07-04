@@ -54,19 +54,22 @@ const MenuItems = () => {
 export default MenuItems;
 
 const menuStyles = StyleSheet.create({
-  container: { flex: 1 },
-  innerContainer: { padding: 40, backgroundColor: green },
+  container: {
+    flex: 0.75,
+  },
+  innerContainer: {
+    paddingHorizontal: 40,
+    paddingVertical: 20,
+    backgroundColor: "black",
+  },
   headerText: {
-    color: white,
-    textAlign: "center",
+    color: "white",
     fontSize: 40,
-    padding: 40,
     flexWrap: "wrap",
+    textAlign: "center",
   },
   itemText: {
-    color: yellow,
-    textAlign: "center",
+    color: "#F4CE14",
     fontSize: 36,
-    padding: 40,
   },
 });
