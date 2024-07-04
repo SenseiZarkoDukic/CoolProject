@@ -9,8 +9,8 @@ export default function WelcomeApp() {
     <>
       <View style={orangeStyles.container}>
         <LittleLemonHeader />
-        <WelcomeScreen />
-        {/* <MenuItems /> */}
+        {/* <WelcomeScreen /> */}
+        <MenuItems />
       </View>
 
       <View style={orangeStyles.footerContainer}>
