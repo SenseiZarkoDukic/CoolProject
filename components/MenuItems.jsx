@@ -31,10 +31,10 @@ const menuItemsToDisplay = [
 
 const Item = ({ name, price }) => (
   <View style={menuStyles.innerContainer}>
-    <Text style={menuStyles.itemTextName}>
+    <Text style={menuStyles.itemTextName} numberOfLines={1}>
       {name}
-      <Text style={menuStyles.itemTextPrice}>{price}</Text>
     </Text>
+    <Text style={menuStyles.itemTextPrice}>{price}</Text>
   </View>
 );
 
@@ -65,6 +65,8 @@ const menuStyles = StyleSheet.create({
     paddingHorizontal: 40,
     paddingVertical: 20,
     backgroundColor: "black",
+    flexDirection: "row",
+    justifyContent: "space-between",
   },
   headerText: {
     color: "white",
@@ -76,12 +78,10 @@ const menuStyles = StyleSheet.create({
     color: "#F4CE14",
     fontSize: 26,
     paddingRight: 20,
-    textAlign: "left",
   },
   itemTextPrice: {
     color: "#F4CE14",
     fontSize: 26,
     paddingLeft: 20,
-    textAlign: "right",
   },
 });
