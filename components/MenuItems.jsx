@@ -29,6 +29,8 @@ const menuItemsToDisplay = [
   { name: "Panna Cotta", price: "$5.00", id: "21V" },
 ];
 
+const Separator = () => <View style={menuStyles.separator} />;
+
 const Item = ({ name, price }) => (
   <View style={menuStyles.innerContainer}>
     <Text style={menuStyles.itemTextName} numberOfLines={1}>
@@ -50,6 +52,7 @@ const MenuItems = () => {
         data={menuItemsToDisplay}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
+        ItemSeparatorComponent={Separator}
       />
     </View>
   );
@@ -83,5 +86,10 @@ const menuStyles = StyleSheet.create({
     color: "#F4CE14",
     fontSize: 26,
     paddingLeft: 20,
+  },
+  separator: {
+    height: 1,
+    width: "100%",
+    backgroundColor: "#CED0CE",
   },
 });
