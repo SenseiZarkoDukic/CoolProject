@@ -13,9 +13,9 @@ export default function WelcomeApp() {
         <MenuItems />
       </View>
 
-      <View style={orangeStyles.footerContainer}>
+      {/* <View style={orangeStyles.footerContainer}>
         <LittleLemonFooter />
-      </View>
+      </View> */}
     </>
   );
 }

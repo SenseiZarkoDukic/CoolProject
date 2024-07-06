@@ -29,6 +29,12 @@ const menuItemsToDisplay = [
   { name: "Panna Cotta", price: "$5.00", id: "21V" },
 ];
 
+const Footer = () => (
+  <Text style={menuStyles.footerTitle}>
+    All rights reserved by Little Lemon, 2022
+  </Text>
+);
+
 const Header = () => <Text style={menuStyles.headerText}>View Menu</Text>;
 
 const Separator = () => <View style={menuStyles.separator} />;
@@ -55,6 +61,7 @@ const MenuItems = () => {
         keyExtractor={(item) => item.id}
         ItemSeparatorComponent={Separator}
         ListHeaderComponent={Header}
+        ListFooterComponent={Footer}
       />
     </View>
   );
@@ -93,5 +100,13 @@ const menuStyles = StyleSheet.create({
     height: 1,
     width: "100%",
     backgroundColor: "#CED0CE",
+  },
+  footerTitle: {
+    // padding: 20,
+    backgroundColor: "#EE9972",
+    fontSize: 18,
+    color: "black",
+    textAlign: "center",
+    fontStyle: "italic",
   },
 });
