@@ -29,6 +29,8 @@ const menuItemsToDisplay = [
   { name: "Panna Cotta", price: "$5.00", id: "21V" },
 ];
 
+const Header = () => <Text style={menuStyles.headerText}>View Menu</Text>;
+
 const Separator = () => <View style={menuStyles.separator} />;
 
 const Item = ({ name, price }) => (
@@ -47,12 +49,12 @@ const MenuItems = () => {
 
   return (
     <View style={menuStyles.container}>
-      <Text style={menuStyles.headerText}>View Menu</Text>
       <FlatList
         data={menuItemsToDisplay}
         renderItem={renderItem}
         keyExtractor={(item) => item.id}
         ItemSeparatorComponent={Separator}
+        ListHeaderComponent={Header}
       />
     </View>
   );
