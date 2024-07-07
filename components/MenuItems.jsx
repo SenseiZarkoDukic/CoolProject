@@ -110,7 +110,7 @@ const MenuItems = () => {
         itemSeparatorComponent={Separator}
         ListHeaderComponent={Header}
         ListFooterComponent={Footer}
-      />
+      ></SectionList>
     </View>
   );
 };
@@ -145,9 +145,8 @@ const menuStyles = StyleSheet.create({
     paddingLeft: 20,
   },
   separator: {
-    height: 1,
-    width: "100%",
-    backgroundColor: "#CED0CE",
+    borderBottomWidth: 1,
+    borderColor: "#EDEFEE",
   },
   footerTitle: {
     // padding: 20,
