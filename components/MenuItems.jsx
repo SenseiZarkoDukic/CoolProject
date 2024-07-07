@@ -1,5 +1,12 @@
 import React from "react";
-import { View, Text, ScrollView, StyleSheet, FlatList } from "react-native";
+import {
+  View,
+  Text,
+  ScrollView,
+  StyleSheet,
+  FlatList,
+  SectionList,
+} from "react-native";
 
 const green = "#495E57";
 const white = "#EDEFEE";
