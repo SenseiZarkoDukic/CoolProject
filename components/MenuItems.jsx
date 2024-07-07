@@ -96,8 +96,8 @@ const MenuItems = () => {
 
   const renderItem = ({ item }) => <Item name={item} />;
 
-  const renderSectionHeader = ({ section: title }) => (
-    <Text style={menuStyles.headerText}>{title}</Text>
+  const renderSectionHeader = ({ section: { title } }) => (
+    <Text style={menuStyles.sectionHeaderTitle}>{title}</Text>
   );
 
   return (
@@ -107,9 +107,9 @@ const MenuItems = () => {
         sections={menuItemsToDisplay}
         renderItem={renderItem}
         renderSectionHeader={renderSectionHeader}
-        // renderSeparatorComponent={Separator}
-        // ListHeaderComponent={Header}
-        // ListFooterComponent={Footer}
+        itemSeparatorComponent={Separator}
+        ListHeaderComponent={Header}
+        ListFooterComponent={Footer}
       />
     </View>
   );
@@ -156,5 +156,11 @@ const menuStyles = StyleSheet.create({
     color: "black",
     textAlign: "center",
     fontStyle: "italic",
+  },
+  sectionHeaderTitle: {
+    backgroundColor: "#EE9972",
+    fontSize: 24,
+    color: "black",
+    textAlign: "center",
   },
 });
