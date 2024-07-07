@@ -85,24 +85,31 @@ const Item = ({ name, price }) => (
     <Text style={menuStyles.itemTextName} numberOfLines={1}>
       {name}
     </Text>
-    <Text style={menuStyles.itemTextPrice}>{price}</Text>
+    {/* <Text style={menuStyles.itemTextPrice}>{price}</Text> */}
   </View>
 );
 
 const MenuItems = () => {
-  const renderItem = ({ item }) => (
-    <Item name={item.name} price={item.price} id={item.id} />
+  // const renderItem = ({ item }) => (
+  //   <Item name={item.name} price={item.price} id={item.id} />
+  // );
+
+  const renderItem = ({ item }) => <Item name={item} />;
+
+  const renderSectionHeader = ({ section: title }) => (
+    <Text style={menuStyles.headerText}>{title}</Text>
   );
 
   return (
     <View style={menuStyles.container}>
-      <FlatList
-        data={menuItemsToDisplay}
+      <SectionList
+        keyExtractor={(item, index) => item + index}
+        sections={menuItemsToDisplay}
         renderItem={renderItem}
-        keyExtractor={(item) => item.id}
-        ItemSeparatorComponent={Separator}
-        ListHeaderComponent={Header}
-        ListFooterComponent={Footer}
+        renderSectionHeader={renderSectionHeader}
+        // renderSeparatorComponent={Separator}
+        // ListHeaderComponent={Header}
+        // ListFooterComponent={Footer}
       />
     </View>
   );
