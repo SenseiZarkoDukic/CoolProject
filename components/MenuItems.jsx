@@ -107,7 +107,7 @@ const MenuItems = () => {
         sections={menuItemsToDisplay}
         renderItem={renderItem}
         renderSectionHeader={renderSectionHeader}
-        itemSeparatorComponent={Separator}
+        ItemSeparatorComponent={Separator}
         ListHeaderComponent={Header}
         ListFooterComponent={Footer}
       ></SectionList>
