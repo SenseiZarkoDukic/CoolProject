@@ -203,7 +203,7 @@ const menuStyles = StyleSheet.create({
     fontStyle: "italic",
   },
   sectionHeaderTitle: {
-    backgroundColor: "#EE9972",
+    backgroundColor: "#F4CE14",
     fontSize: 24,
     color: "black",
     textAlign: "center",
