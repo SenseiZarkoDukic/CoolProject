@@ -1,6 +1,13 @@
 import React, { useState } from "react";
 
-import { ScrollView, StyleSheet, Text, TextInput } from "react-native";
+import {
+  KeyboardAvoidingView,
+  Platform,
+  ScrollView,
+  StyleSheet,
+  Text,
+  TextInput,
+} from "react-native";
 
 export function FeedbackForm() {
   const [firstName, onChangeFirstName] = useState("");
@@ -17,13 +24,17 @@ export function FeedbackForm() {
         and classic cocktails in a lively but casual environment. We would love
         to hear your experience with us!
       </Text>
+      {/* <KeyboardAvoidingView
+        behavior="padding"
+        styles={feedbackStyles.container}
+      > */}
       <TextInput
         style={feedbackStyles.input}
         onChangeText={onChangeFirstName}
         value={firstName}
         placeholder="First Name"
       />
-      {/* <TextInput
+      <TextInput
         style={feedbackStyles.input}
         onChangeText={onChangeLastName}
         value={lastName}
@@ -35,7 +46,8 @@ export function FeedbackForm() {
         value={message}
         placeholder="Message"
         multiline={true}
-      /> */}
+      />
+      {/* </KeyboardAvoidingView> */}
     </ScrollView>
   );
 }
@@ -48,8 +60,8 @@ const feedbackStyles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
     fontSize: 16,
-    borderColor: "EDEFEE",
-    backgroundColor: "EDEFEE",
+    borderColor: "#EDEFEE",
+    backgroundColor: "#EDEFEE",
   },
   messageInput: {
     height: 100,
@@ -57,7 +69,7 @@ const feedbackStyles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
     fontSize: 16,
-    backgroundColor: "EDEFEE",
+    backgroundColor: "#EDEFEE",
   },
   infoSection: {
     fontSize: 24,
