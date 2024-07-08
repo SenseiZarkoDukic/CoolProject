@@ -46,6 +46,7 @@ const feedbackStyles = StyleSheet.create({
     margin: 12,
     borderWidth: 1,
     padding: 10,
+    backgroundColor: "#F4CE14",
   },
 });
 
