@@ -9,7 +9,7 @@ export default function WelcomeApp() {
   return (
     <>
       <View style={orangeStyles.container}>
-        <LittleLemonHeader />
+        {/* <LittleLemonHeader /> */}
         {/* <WelcomeScreen /> */}
         {/* <MenuItems /> */}
         <FeedbackForm />

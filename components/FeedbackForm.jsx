@@ -25,7 +25,7 @@ export function FeedbackForm() {
         to hear your experience with us!
       </Text>
       <KeyboardAvoidingView
-        behavior={Platform.OS === "ios" ? "padding" : "position"}
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
         styles={feedbackStyles.container}
       >
         <TextInput
