@@ -49,7 +49,7 @@ const feedbackStyles = StyleSheet.create({
     padding: 10,
     fontSize: 16,
     borderColor: "EDEFEE",
-    backgroundColor: "white",
+    backgroundColor: "EDEFEE",
   },
   messageInput: {
     height: 100,
@@ -57,7 +57,7 @@ const feedbackStyles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
     fontSize: 16,
-    backgroundColor: "white",
+    backgroundColor: "EDEFEE",
   },
   infoSection: {
     fontSize: 24,
