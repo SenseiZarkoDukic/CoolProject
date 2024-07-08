@@ -1,8 +1,9 @@
 import { View, Text, StyleSheet } from "react-native";
 import { LittleLemonHeader } from "@/components/LittleLemonHeader";
-import { LittleLemonFooter } from "@/components/LittleLemonFooter";
-import { WelcomeScreen } from "@/components/WelcomeScreen";
-import MenuItems from "@/components/MenuItems";
+// import { LittleLemonFooter } from "@/components/LittleLemonFooter";
+// import { WelcomeScreen } from "@/components/WelcomeScreen";
+// import MenuItems from "@/components/MenuItems";
+import FeedbackForm from "@/components/FeedbackForm";
 
 export default function WelcomeApp() {
   return (
@@ -10,7 +11,8 @@ export default function WelcomeApp() {
       <View style={orangeStyles.container}>
         <LittleLemonHeader />
         {/* <WelcomeScreen /> */}
-        <MenuItems />
+        {/* <MenuItems /> */}
+        <FeedbackForm />
       </View>
 
       {/* <View style={orangeStyles.footerContainer}>
