@@ -8,7 +8,7 @@ export function FeedbackForm() {
   const [message, onChangeMessage] = useState("");
 
   return (
-    <ScrollView style={feedbackStyles.container}>
+    <ScrollView style={feedbackStyles.container} keyboardDismissMode="on-drag">
       <Text style={feedbackStyles.headingSection}>
         How was your visit to Little Lemon?
       </Text>
