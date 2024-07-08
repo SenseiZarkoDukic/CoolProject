@@ -24,30 +24,30 @@ export function FeedbackForm() {
         and classic cocktails in a lively but casual environment. We would love
         to hear your experience with us!
       </Text>
-      {/* <KeyboardAvoidingView
-        behavior="padding"
+      <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : "position"}
         styles={feedbackStyles.container}
-      > */}
-      <TextInput
-        style={feedbackStyles.input}
-        onChangeText={onChangeFirstName}
-        value={firstName}
-        placeholder="First Name"
-      />
-      <TextInput
-        style={feedbackStyles.input}
-        onChangeText={onChangeLastName}
-        value={lastName}
-        placeholder="Last Name"
-      />
-      <TextInput
-        style={feedbackStyles.input}
-        onChangeText={onChangeMessage}
-        value={message}
-        placeholder="Message"
-        multiline={true}
-      />
-      {/* </KeyboardAvoidingView> */}
+      >
+        <TextInput
+          style={feedbackStyles.input}
+          onChangeText={onChangeFirstName}
+          value={firstName}
+          placeholder="First Name"
+        />
+        <TextInput
+          style={feedbackStyles.input}
+          onChangeText={onChangeLastName}
+          value={lastName}
+          placeholder="Last Name"
+        />
+        <TextInput
+          style={feedbackStyles.messageInput}
+          onChangeText={onChangeMessage}
+          value={message}
+          placeholder="Message"
+          multiline={true}
+        />
+      </KeyboardAvoidingView>
     </ScrollView>
   );
 }

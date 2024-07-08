@@ -15,9 +15,9 @@ export default function WelcomeApp() {
         <FeedbackForm />
       </View>
 
-      <View style={orangeStyles.footerContainer}>
+      {/* <View style={orangeStyles.footerContainer}>
         <LittleLemonFooter />
-      </View>
+      </View> */}
     </>
   );
 }
