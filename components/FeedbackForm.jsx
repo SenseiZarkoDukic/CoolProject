@@ -23,7 +23,7 @@ export function FeedbackForm() {
         value={firstName}
         placeholder="First Name"
       />
-      <TextInput
+      {/* <TextInput
         style={feedbackStyles.input}
         onChangeText={onChangeLastName}
         value={lastName}
@@ -35,13 +35,13 @@ export function FeedbackForm() {
         value={message}
         placeholder="Message"
         multiline={true}
-      />
+      /> */}
     </ScrollView>
   );
 }
 
 const feedbackStyles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: "#495E57" },
+  container: { flex: 1 },
   input: {
     height: 40,
     margin: 12,
@@ -49,7 +49,7 @@ const feedbackStyles = StyleSheet.create({
     padding: 10,
     fontSize: 16,
     borderColor: "EDEFEE",
-    backgroundColor: "#F4CE14",
+    backgroundColor: "white",
   },
   messageInput: {
     height: 100,
@@ -57,7 +57,7 @@ const feedbackStyles = StyleSheet.create({
     borderWidth: 1,
     padding: 10,
     fontSize: 16,
-    backgroundColor: "#F4CE14",
+    backgroundColor: "white",
   },
   infoSection: {
     fontSize: 24,
@@ -65,7 +65,7 @@ const feedbackStyles = StyleSheet.create({
     marginVertical: 8,
     color: "#EDEFEE",
     textAlign: "center",
-    backgroundColor: "#495E57",
+    backgroundColor: "black",
   },
   headingSection: {
     fontSize: 28,
@@ -73,7 +73,7 @@ const feedbackStyles = StyleSheet.create({
     marginVertical: 8,
     color: "#EDEFEE",
     textAlign: "center",
-    backgroundColor: "#495E57",
+    backgroundColor: "black",
   },
 });
 

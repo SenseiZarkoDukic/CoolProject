@@ -1,6 +1,6 @@
 import { View, Text, StyleSheet } from "react-native";
 import { LittleLemonHeader } from "@/components/LittleLemonHeader";
-// import { LittleLemonFooter } from "@/components/LittleLemonFooter";
+import { LittleLemonFooter } from "@/components/LittleLemonFooter";
 // import { WelcomeScreen } from "@/components/WelcomeScreen";
 // import MenuItems from "@/components/MenuItems";
 import FeedbackForm from "@/components/FeedbackForm";
@@ -15,9 +15,9 @@ export default function WelcomeApp() {
         <FeedbackForm />
       </View>
 
-      {/* <View style={orangeStyles.footerContainer}>
+      <View style={orangeStyles.footerContainer}>
         <LittleLemonFooter />
-      </View> */}
+      </View>
     </>
   );
 }
@@ -35,10 +35,10 @@ const styles = StyleSheet.create({
 const orangeStyles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#333333",
+    backgroundColor: "black",
   },
   footerContainer: {
-    backgroundColor: "#333333",
+    backgroundColor: "black",
   },
 });
 
