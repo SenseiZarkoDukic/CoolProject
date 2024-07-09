@@ -15,19 +15,22 @@ export function FeedbackForm() {
   const [message, onChangeMessage] = useState("");
 
   return (
-    <ScrollView style={feedbackStyles.container} keyboardDismissMode="on-drag">
-      <Text style={feedbackStyles.headingSection}>
-        How was your visit to Little Lemon?
-      </Text>
-      <Text style={feedbackStyles.infoSection}>
-        Little Lemon is a charming neighborhood bistro that serves simple food
-        and classic cocktails in a lively but casual environment. We would love
-        to hear your experience with us!
-      </Text>
-      <KeyboardAvoidingView
-        behavior={Platform.OS === "ios" ? "padding" : "height"}
-        styles={feedbackStyles.container}
+    <KeyboardAvoidingView
+      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      styles={feedbackStyles.container}
+    >
+      <ScrollView
+        style={feedbackStyles.container}
+        keyboardDismissMode="on-drag"
       >
+        <Text style={feedbackStyles.headingSection}>
+          How was your visit to Little Lemon?
+        </Text>
+        <Text style={feedbackStyles.infoSection}>
+          Little Lemon is a charming neighborhood bistro that serves simple food
+          and classic cocktails in a lively but casual environment. We would
+          love to hear your experience with us!
+        </Text>
         <TextInput
           style={feedbackStyles.input}
           onChangeText={onChangeFirstName}
@@ -47,8 +50,8 @@ export function FeedbackForm() {
           placeholder="Message"
           multiline={true}
         />
-      </KeyboardAvoidingView>
-    </ScrollView>
+      </ScrollView>
+    </KeyboardAvoidingView>
   );
 }
 
