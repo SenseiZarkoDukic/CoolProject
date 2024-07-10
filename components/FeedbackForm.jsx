@@ -15,13 +15,10 @@ export function FeedbackForm() {
   const [message, onChangeMessage] = useState("");
 
   return (
-    <KeyboardAvoidingView
-      behavior={Platform.OS === "ios" ? "padding" : "height"}
-      styles={feedbackStyles.container}
-    >
-      <ScrollView
-        style={feedbackStyles.container}
-        keyboardDismissMode="on-drag"
+    <ScrollView style={feedbackStyles.container} keyboardDismissMode="on-drag">
+      <KeyboardAvoidingView
+        behavior={Platform.OS === "ios" ? "padding" : "height"}
+        styles={feedbackStyles.container}
       >
         <Text style={feedbackStyles.headingSection}>
           How was your visit to Little Lemon?
@@ -50,8 +47,8 @@ export function FeedbackForm() {
           placeholder="Message"
           multiline={true}
         />
-      </ScrollView>
-    </KeyboardAvoidingView>
+      </KeyboardAvoidingView>
+    </ScrollView>
   );
 }
 
